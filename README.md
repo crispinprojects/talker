@@ -1,2 +1,4 @@
-# diphone-synthesizer
-Diphone speech synthesizer (C++)
+# Diphone Speech Synthesizer
+
+A Linux command line diphone speech synthesizer written in C++.
+
