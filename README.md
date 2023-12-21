@@ -1,6 +1,6 @@
 # Diphone Speech Synthesizer (talkdp)
 
-The application talkdp is a Linux command line diphone speech synthesizer written in C++. It has been written using just C++ and not using any GTK or Qt libraries.
+The application talkdp is a Linux command line diphone speech synthesizer. It has been written in C++. 
 
 ### Prebuilt Binary
 
@@ -50,6 +50,8 @@ Hello world I am a speech synthesizer
 I am a text to speech converter
 
 Mary had a little lamb, It's fleece was white as snow And everywhere that Mary went? The lamb was sure to go!
+
+I am a speech synthesizer wishing you a merry christmas and a happy new year.
 ```
 
 ## Build From Source
@@ -63,7 +65,7 @@ sudo apt install build-essential
 sudo apt install cmake
 ```
 
-Create a build directory and change into this. Then run cmake followed by make as shown below.
+Make a build directory and use the cd command to change into this. Then run cmake followed by make as shown below.
 ```
 mkdir build
 cd build
