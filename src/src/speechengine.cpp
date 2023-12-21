@@ -101,7 +101,7 @@ std::string SpeechEngine::get_diphone_path(std::string dipStr)
 	else if(dipStr=="ae-pau") return app_path+"/diphone/ae-pau.wav";
 	else if(dipStr=="ae-r") return app_path+"/diphone/ae-r.wav";
 	else if(dipStr=="ae-s") return app_path+"/diphone/ae-s.wav";
-	else if(dipStr=="ae -sh") return app_path+"/diphone/ae-sh.wav";
+	else if(dipStr=="ae-sh") return app_path+"/diphone/ae-sh.wav";
 	else if(dipStr=="ae-t") return app_path+"/diphone/ae-t.wav";
 	else if(dipStr=="ae-th") return app_path+"/diphone/ae-th.wav";
 	else if(dipStr=="ae-uh") return app_path+"/diphone/ae-uh.wav";
@@ -1797,8 +1797,7 @@ void SpeechEngine::speak(std::string str){
 	WavAmp wa; //amplification 
 	std::string pathin ="/tmp/merge.wav";
 	std::string pathout ="/tmp/talk.wav";
-	 double gain =3.0;
-     // qDebug()<<"gain = "<<gain<<"\n";
+	 double gain =3.0;     
 	 wa.wavAmp(pathin, pathout,gain);
 
 	if(fileExists("/tmp/talk.wav")) {
