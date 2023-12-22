@@ -1,6 +1,6 @@
 # Diphone Speech Synthesizer (talkdp)
 
-The application talkdp is a Linux command line diphone speech synthesizer. It has been written in C++. 
+The application talkdp (dp for diphone) is a Linux command line diphone speech synthesizer. It has been written in C++. 
 
 ### Prebuilt Binary
 
