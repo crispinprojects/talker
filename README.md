@@ -51,13 +51,13 @@ I originally used [pw-play](https://www.thegeekdiary.com/pw-play-command-example
 Pre-processing of input text is very limited at this stage just removing unwanted characters such as commas, exclamation marks and question marks. Some sample phrases for testing talkdp are shown below
 
 ```
-Hello world I am a speech synthesizer 
+Hello world I am a diphone speech synthesizer 
 
 I am a text to speech converter
 
 Mary had a little lamb, It's fleece was white as snow And everywhere that Mary went? The lamb was sure to go!
 
-I am a speech synthesizer wishing you a merry christmas and a happy new year.
+Talk diphone speech synthesizer wishes you a merry christmas and a happy new year.
 ```
 
 ## Build From Source

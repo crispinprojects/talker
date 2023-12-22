@@ -14002,6 +14002,7 @@ std::string  Dictionary::word_to_diphones(std::string word)
 	if (word =="dios") diphone_str ="d-iy iy-ao ao-uh uh-s";
 	if (word =="dioxide") diphone_str ="d-aa aa-iy iy-aa aa-k k-s s-aa aa-iy iy-d";
 	if (word =="dip") diphone_str ="d-ih ih-p";
+	if (word =="diphone") diphone_str ="d-aa aa-iy iy-f f-ao ao-uh uh-n";
 	if (word =="diphtheria") diphone_str ="d-ih ih-f f-th th-ih ih-r r-iy iy-ah";
 	if (word =="diploma") diphone_str ="d-ih ih-p p-l l-ao ao-uh uh-m m-ah";
 	if (word =="diplomacy") diphone_str ="d-ih ih-p p-l l-ao ao-uh uh-m m-ah ah-s s-iy";
