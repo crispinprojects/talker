@@ -30,15 +30,21 @@ The folder containing the diphone wav files should be placed into the applicatio
 
 The diphone speech synthesizer uses a small dictionary of approximately 56,600 English words. If a word is not recognised by the dictionary it is skipped over. More words will be added in future updates.
 
-## Pipewire
+## Audio
 
-Debian 12 provides Pipewire as the default audio server. Pipewire aims to improve audio and video handling in Linux systems replacing PulseAudio. To verify the version of Pipewire installed, run the command:
+I have used the Advanced Linux Sound Architecture (ALSA) library [aplay](https://alsa.opensrc.org/Aplay) program for audio output. If building a desktop from a Debian base install you will need to install ALSA as shown below but otherwise this is installed by default.
+
+```
+sudo apt install alsa-utils
+```
+
+Debian 12 GNOME provides Pipewire as the default audio server. Pipewire aims to improve audio and video handling in Linux systems replacing PulseAudio. To verify the version of Pipewire installed, run the command:
 
 ```
 pipewire --version
 ```
 
-I have used [pw-play](https://www.thegeekdiary.com/pw-play-command-examples-in-linux/) to play audio files with PipeWire.
+I originally used [pw-play](https://www.thegeekdiary.com/pw-play-command-examples-in-linux/) to play audio output but found that PipeWire was not installed by default when using Debain Xfce and reverted to using ALSA aplay
 
 ## Sample Phrases
 

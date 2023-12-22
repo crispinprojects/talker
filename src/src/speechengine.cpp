@@ -1736,7 +1736,8 @@ bool SpeechEngine::fileExists(std::string path)
 void SpeechEngine::play(const char *filename)
 {
 	std::string cmd = "";
-	cmd = cmd + "pw-play " + filename; //pipewire
+	//cmd = cmd + "pw-play " + filename; //pipewire (not default on Debian xfce)
+	cmd = cmd + "aplay " + filename; //back to ALSA
 	system(cmd.c_str());
 }
 //---------------------------------------------------------------------
