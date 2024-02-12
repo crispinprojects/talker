@@ -265,7 +265,7 @@ static void button_speak_clicked (GtkButton *button, gpointer   user_data)
 	unsigned char *data = rawcat(diphone_arrays, diphone_arrays_sizes, diphone_number);	
 	unsigned int data_len = get_merge_size(diphone_arrays_sizes,diphone_number);	
     
-    gchar* raw_file ="talkout.raw";
+    gchar* raw_file ="/tmp/talkout.raw";
 	FILE* f = fopen(raw_file, "w");
     fwrite(data, data_len, 1, f);
     fclose(f);  
