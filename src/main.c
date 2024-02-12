@@ -23,7 +23,7 @@ static void callbk_quit(GSimpleAction* action,G_GNUC_UNUSED GVariant *parameter,
 static void callbk_about(GSimpleAction* action, GVariant *parameter, gpointer user_data);
 static GMenu *create_menu(const GtkApplication *app);
 
-static int m_talk_rate=16000;
+static int m_talk_rate=7500;
 
 //--------------------------------------------------------------------
 // Removers (unwanted characters}
@@ -163,7 +163,8 @@ void  playraw(gpointer user_data)
     gchar *m_sample_rate_str = g_strdup_printf("%i", m_talk_rate); 
     gchar *sample_rate_str ="-r ";    
     sample_rate_str= g_strconcat(sample_rate_str,m_sample_rate_str, NULL);     
-    gchar * command_str ="aplay -c 1 -f S16_LE";
+    //gchar * command_str ="aplay -c 1 -f S16_LE";
+    gchar * command_str ="aplay -c 1 -f U8";
     command_str =g_strconcat(command_str," ",sample_rate_str, " ", raw_file, NULL); 
     system(command_str); 
 }

@@ -16,7 +16,7 @@
  ***************************************************************************/
 
 #include "diphone.h"
-#include "voice4.h"
+#include "voice6.h"
 
 unsigned char *load_diphone_arry(char* diphone_str)
 {
